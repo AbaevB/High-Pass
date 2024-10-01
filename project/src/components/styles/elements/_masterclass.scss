@@ -1,0 +1,38 @@
+.masterclass  {
+padding-top: 41px;
+padding-bottom: 68px;
+background-color: $mainBackground;
+&__container{
+  display: flex;
+  /*grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(630px, auto);*/
+  gap: $gap;
+}
+
+&__banner {
+  flex: 1;
+  width: 630px;
+  height: 630px;
+  background-image: url('../img/masterclasss-bg.webp');
+}
+
+&__title  {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  color: $backgroundDark;
+}
+
+&__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px  275px;
+  gap: $gap;
+  @include listReset();
+}
+
+&__item:first-child {
+  grid-column: 1/3;
+}
+
+}

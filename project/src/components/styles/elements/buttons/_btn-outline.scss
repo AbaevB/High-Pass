@@ -1,0 +1,24 @@
+ .btn-outline{
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: $mainBackground;
+  background-color: transparent;
+  border: 3px solid $hoverTextColor;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  &:hover{
+    background-color: $hoverTextColor;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  &:focus:not(:active){
+    background-color: $focusMenuBg;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  &:active{
+    background-color: $activeTextColor;
+    border-color: $activeTextColor;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+ }

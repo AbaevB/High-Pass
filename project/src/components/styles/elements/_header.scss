@@ -2,4 +2,23 @@
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: $backgroundDark;
+  &__container  {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 82px;
+  }
+  &__burger {
+    display: none;
+  }
+  &__nav  {
+    margin-right: auto;
+  }
+  &__form {
+    display: none;
+  }
+  &__btn  {
+    @include btnReset;
+  }
  }
