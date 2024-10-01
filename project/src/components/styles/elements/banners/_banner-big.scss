@@ -1,0 +1,31 @@
+ .banner-big{
+  position: relative;
+  padding: 60px;
+  background-color: $backgroundDark;
+  @include backgroundDefault();
+  &__tag  {
+    top: 15px;
+    right: 15px;
+  }
+  &__content  {
+    display: flex;
+    max-width: 427px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__span {
+    margin-bottom: 3px;
+    color: $mainBackground;
+  }
+  &__title  {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: $mainBackground;
+  }
+  &__btn  {
+    z-index: z('banner-big-btn');
+    max-width: 159px;
+  }
+
+ }

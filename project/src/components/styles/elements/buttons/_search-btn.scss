@@ -1,0 +1,19 @@
+.search-btn{
+  color: $mainBackground;
+  transition: color 0.3s ease-in-out;
+  svg path{
+    fill:currentColor;
+  }
+  &:hover{
+    color: $hoverTextColor;
+    transition: color 0.3s ease-in-out;
+  }
+  &:focus:not(:active){
+    color: $focusMenuBg;
+    transition: color 0.3s ease-in-out;
+  }
+  &:active{
+    color:$activeTextColor;
+    transition: color 0.3s ease-in-out;
+  }
+}
