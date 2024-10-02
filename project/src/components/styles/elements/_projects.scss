@@ -1,1 +1,38 @@
- 
+ .projects  {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background-color: $mainBackground;
+  &__title  {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $backgroundDark;
+  }
+  &__list {
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: repeat(3, 1fr) 2fr 2fr;
+    grid-template-rows: 300px 300px ;
+    gap: $gap;
+    @include listReset();
+  }
+
+  &__item {
+    height: 300px;
+  }
+
+
+  &__item:nth-child(4){
+    grid-column: 4/6;
+  }
+  &__item:nth-child(5)  {
+    grid-column: 1/4;
+  }
+  &__banner_1 {
+    background-image: url("../img/projects-image-4.webp");
+  }
+
+  &__banner_2 {
+    background-image: url("../img/projects-image-5.webp");
+  }
+ }
