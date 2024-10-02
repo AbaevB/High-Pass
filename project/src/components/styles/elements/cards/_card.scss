@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 100%;
+  height: 100%;
+  &__header {
+    position: relative;
+    flex: 0;
+  }
+  &__img  {
+    /*width: 100%;
+    height: 100%;*/
+    object-fit: cover;
+  }
+  &__tag  {
+    top: 7px;
+    right: 7px;
+  }
+  &__body {
+    flex: 1;
+    padding-top: 18px;
+  }
+  &__text {
+    line-height: 22px;
+  }
+  &__footer {
+    position: relative;
+  }
+  &__date {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 18px ;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $dateColor;
+  }
+
+  &__date::before {
+    position: absolute;
+    left: -20px;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/sprite.svg#css--calendar');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
