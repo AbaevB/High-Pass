@@ -1,0 +1,13 @@
+ .map {
+  width: 850px;
+  height: 460px;
+ }
+
+ [class*="ground-pane"] {
+  filter: grayscale(1);
+
+}
+
+.ymaps-2-1-79-copyright,.ymaps-2-1-79-gototech, .ymaps-2-1-79-gototaxi, .ymaps-2-1-79-gotoymaps{
+  display: none !important;
+}

@@ -1,0 +1,104 @@
+.map-holder {
+
+  position: relative;
+  max-width: 850px;
+  height: 460px;
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: z('darker');
+    left: 0;
+    width: 410px;
+    height: 460px;
+    background-color: $darker;
+  }
+
+  &__content {
+    position: relative;
+    width: 300px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $mainBackground;
+  }
+
+  &__address {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: $socialColor;
+  }
+
+  &__link {
+    position: relative;
+    left: 18px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hoverTextColor;
+    &::before {
+      position: absolute;
+      left: -17px;
+      content: '';
+      width: 17px;
+      height: 17px;
+      mask-image: url('../img/sprite.svg#include--phone');
+      background-color: currentColor;
+    }
+    &:hover {
+      color: $focusMenuBg;
+    }
+    &:focus:not(:active) {
+      color: $hoverTextColor;
+    }
+    &:active {
+      color: $activeTextColor;
+    }
+
+    & svg  {
+      fill: currentColor ;
+    }
+
+  }
+
+
+
+  &__btn {
+    position: absolute;
+    &:hover {
+      color: $hoverTextColor;
+    }
+
+    &_close{
+      top: 20px;
+      right: 20px;
+      z-index: z('close-btn');
+    }
+
+    &_open {
+      top: 20px;
+      left: 20px;
+      color: #cacaca;
+z-index: z('open-btn');
+      &:hover {
+        color: $hoverTextColor;
+      }
+      svg{
+       fill: currentColor;
+     }
+    }
+
+    svg {
+      fill: currentColor;
+    }
+
+  }
+}
