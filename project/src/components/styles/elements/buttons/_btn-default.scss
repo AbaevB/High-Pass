@@ -1,9 +1,24 @@
  .btn-default {
+  @include  btnReset();
    display: block;
    padding: 0 22px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 44px;
   color: #fff;
   background-color:$hoverTextColor;
+  border: 3px solid $hoverTextColor;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  &:hover{
+    background-color: $focusMenuBg;
+    border-color: $focusMenuBg;
+  }
+  &:focus:not(:active)  {
+    background-color: $hoverTextColor;
+    border-color: $activeTextColor;
+  }
+  &:active  {
+    background-color: $activeTextColor;
+    border-color: $activeTextColor;
+  }
 }

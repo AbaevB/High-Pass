@@ -15,4 +15,26 @@
     @include listReset
   }
 
+  &__item_left  {
+    width: 850px;
+  }
+
+  &__item_right {
+    max-width: 410px;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $backgroundDark;
+  }
+
+  &__text {
+    margin-bottom: 14px;
+    line-height: 22px;
+    color: $dateColor;
+  }
+
 }

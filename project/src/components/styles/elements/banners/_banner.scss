@@ -21,12 +21,33 @@
    }
    &__date{
     position: relative;
+    left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
     color: $mainBackground;
+    &::before{
+      position: absolute;
+    left: -20px;
+    content: '';
+    width: 18px;
+    height: 18px;
+    mask-image: url('../img/sprite.svg#css--calendar-white');
+    background-color: currentColor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
    }
    &__title{
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
     color: $mainBackground;
    }
    &__text{
+    font-size: 16px;
+    line-height: 22px;
     color: $mainBackground;
    }
    &__btn{

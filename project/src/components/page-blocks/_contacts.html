@@ -4,7 +4,7 @@
       Контакты
     </h2>
     <ul class="contacts__list">
-      <li class="contacts__item">
+      <li class="contacts__item contacts__item_left">
         <div class="map-holder">
           <button class="open-btn map-holder__btn map-holder__btn_open d-none" aria-label="Показать адрес"></button>
           <div class="map-holder__overlay">
@@ -25,21 +25,18 @@
           <div class="map" id="map"></div>
         </div>
       </li>
-      <li class="contacts__item">
-        <h3 class="title-4 contacts__subtitle">
+      <li class="contacts__item contacts__item_right">
+        <h3 class="title contacts__subtitle">
           Оставить заявку
         </h3>
-        <p class="text-4 contacts__text">
+        <p class="text contacts__text">
           Оставьте ваши данные, указав в&nbsp;графе &laquo;Комментарий&raquo; желаемые время и&nbsp;дату съёмки или
           другого мероприятия
         </p>
-        <form action="https://jsonplaceholder.typicode.com/posts" id="message" class="contacts-form">
-          <input type="text" name="username" id="name" placeholder="Имя">
-          <input type="email" name="email" id="useremail" placeholder="Email">
-          <textarea name="message" id="usermessage" placeholder="Комментарий"></textarea>
-          <button class="btn-default contacts-form__btn" type="submit">
-            Отправить
-          </button>
+        @@include("../bem-blocks/_contact-form.html",{
+        "id":"contact"
+        })
+       <!---->
       </li>
     </ul>
   </div>
