@@ -1,0 +1,19 @@
+ .footer  {
+  padding-top: 25px;
+  padding-bottom: 26px;
+  background-color: $backgroundDark;
+  &__list{
+    display: flex;
+    @include listReset();
+  }
+  &___item  {
+    display: flex;
+    flex-direction: column;
+  }
+  &__copy {
+    font-family: TTFirsNeue, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $footerColor;
+  }
+ }
