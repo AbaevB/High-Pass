@@ -1,1 +1,18 @@
- 
+.contacts {
+  padding-top: 68px;
+  padding-bottom: 69px;
+
+  &__title {
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $backgroundDark;
+  }
+
+  &__list {
+    display: flex;
+    gap: $gap;
+    @include listReset
+  }
+
+}

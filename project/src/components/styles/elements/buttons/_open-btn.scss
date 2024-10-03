@@ -1,0 +1,13 @@
+.open-btn {
+  @include btnReset;
+  width: 20px;
+  height: 20px;
+  mask-image:url('../img/sprite.svg#include--arrow-right');
+  background-color: $hoverTextColor;
+transition: background-color 0.3s ease-in-out;
+ &:hover{
+ background-color:$focusMenuBg ;
+  }
+
+}
+

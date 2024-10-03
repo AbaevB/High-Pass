@@ -44,7 +44,8 @@
     content: '';
     width: 18px;
     height: 18px;
-    background-image: url('../img/sprite.svg#css--calendar');
+    mask-image: url('../img/sprite.svg#css--calendar');
+    background-color: $dateColor;
     background-size: contain;
     background-repeat: no-repeat;
   }

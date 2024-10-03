@@ -1,3 +1,46 @@
- <section id="contacts" class="contacts">
-  <div class="container contacts__container"></div>
- </section>
+<section id="contacts" class="contacts">
+  <div class="container">
+    <h2 class="title contacts__title">
+      Контакты
+    </h2>
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <div class="map-holder">
+          <button class="open-btn map-holder__btn map-holder__btn_open d-none" aria-label="Показать адрес"></button>
+          <div class="map-holder__overlay">
+            <button class="close-btn map-holder__btn map-holder__btn_close" aria-label="Скрыть адрес"></button>
+            <div class="map-holder__content">
+              <h3 class="title-4 map-holder__title">
+                Студия &laquo;High pass&raquo;
+              </h3>
+              <address class="text-2 map-holder__address">
+                107045, Москва, Даев переулок, дом&nbsp;41, бизнес-центр &laquo;Даев Плаза&raquo;, этаж&nbsp;8, офис
+                &#8470;&nbsp;82
+              </address>
+              <a href="#" class="link-1 map-holder__link">
+                +7&nbsp;495 424-23-532
+              </a>
+            </div>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <h3 class="title-4 contacts__subtitle">
+          Оставить заявку
+        </h3>
+        <p class="text-4 contacts__text">
+          Оставьте ваши данные, указав в&nbsp;графе &laquo;Комментарий&raquo; желаемые время и&nbsp;дату съёмки или
+          другого мероприятия
+        </p>
+        <form action="https://jsonplaceholder.typicode.com/posts" id="message" class="contacts-form">
+          <input type="text" name="username" id="name" placeholder="Имя">
+          <input type="email" name="email" id="useremail" placeholder="Email">
+          <textarea name="message" id="usermessage" placeholder="Комментарий"></textarea>
+          <button class="btn-default contacts-form__btn" type="submit">
+            Отправить
+          </button>
+      </li>
+    </ul>
+  </div>
+</section>

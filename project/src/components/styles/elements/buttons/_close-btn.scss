@@ -1,4 +1,6 @@
 .close-btn{
-  position: absolute;
-
+  @include btnReset;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/sprite.svg#include--round_button');
 }
