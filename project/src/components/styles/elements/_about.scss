@@ -2,10 +2,15 @@
   padding-top: 30px;
   padding-bottom: 70px;
   background-color: $backgroundDark;
-  &__container  {
-    display: flex;
-    gap: $gap;
-  }
+ &__list  {
+  display: flex;
+  gap: $gap;
+  @include listReset();
+ }
+
+ &__item  {
+  width: calc((100% - $gap) / 2);
+ }
   &__title  {
     font-size: 24px;
     font-weight: 700;
@@ -16,8 +21,9 @@
     line-height: 28px;
     color: $socialColor;
   }
-  &__right  {
-    padding-top: 40px;
+
+  &__img  {
+    margin-bottom: 25px;
   }
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "easy-webdev-startpack",
-  "version": "3.1.1",
-  "description": "HTML5+CSS3 template for easy start website project'",
+  "name": "High-Pass",
+  "version": "2.0.0",
+  "description": "Website of photo studio High Pass",
   "main": "gulpfile.js",
   "scripts": {
     "html": "gulp",
