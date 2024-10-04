@@ -9,9 +9,26 @@
     margin-right: 79px;
   }
   &__link {
+    display: block;
+    padding-right: 5px;
+    padding-left: 5px;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     color: $mainBackground;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover {
+      color: $hoverTextColor;
+    }
+    &:focus:not(:active)  {
+      color: $mainBackground;
+      background-color: $focusMenuBg ;
+    }
+
+    &:active  {
+      color: $activeTextColor;
+      background-color: transparent;
+    }
+
   }
  }

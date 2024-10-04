@@ -1,0 +1,76 @@
+ .contact-form {
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
+   gap: 20px;
+
+   &__input {
+     height: 50px;
+     padding: 15px 23px;
+     border: none;
+     color: $backgroundDark;
+     background-color: $footerColor;
+
+     &::placeholder {
+       font-family: Roboto, sans-serif;
+       font-size: 16px;
+       line-height: 19px;
+       color: $dateColor;
+     }
+
+     &:hover{
+      &::placeholder  {
+        color: #ff6e30;
+      }
+     }
+
+     &:focus:not(:active) {
+      &::placeholder  {
+        color: $dateColor;
+      }
+      outline: 1px solid #ff3030;
+     }
+
+     &:active {
+      background-color: $footerColor !important;
+      outline: none;
+     }
+   }
+
+   &__textarea {
+     height: 150px;
+     padding: 15px 23px;
+     resize: none;
+     border: none;
+     background-color: $footerColor;
+
+     &::placeholder {
+       font-family: Roboto, sans-serif;
+       font-size: 16px;
+       line-height: 19px;
+       color: $dateColor;
+     }
+     &:hover{
+      &::placeholder  {
+        color: #ff6e30;
+      }
+     }
+
+     &:focus:not(:active) {
+      &::placeholder  {
+        color: $dateColor;
+      }
+      outline: 1px solid #ff3030;
+     }
+
+     &:active {
+      background-color: $footerColor !important;
+      outline: none;
+     }
+   }
+
+   &__btn {
+    max-width: 126px;
+   }
+
+ }

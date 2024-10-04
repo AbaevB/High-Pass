@@ -1,0 +1,28 @@
+.phone-link {
+  position: relative;
+    left: 18px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+    color: $hoverTextColor;
+    &::before {
+      position: absolute;
+      left: -17px;
+      content: '';
+      width: 17px;
+      height: 17px;
+      mask-image: url('../img/sprite.svg#include--phone');
+      background-color: currentColor;
+    }
+
+    &:hover {
+      color: $focusMenuBg;
+    }
+    &:focus:not(:active) {
+      color: $hoverTextColor;
+    }
+    &:active {
+      color: $activeTextColor;
+    }
+
+}
