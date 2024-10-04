@@ -21,6 +21,7 @@
    padding: 15px 23px;
    height: 50px;
    background-color: $subscribeBg;
+   color: $mainBackground;
    &::placeholder{
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 16px;
@@ -29,10 +30,24 @@
     color: $socialColor;
     outline: none;
     border: none;
+
    }
 
-   &__btn {
-    line-height: 47px ;
-   }
+   &:hover {
+    &::placeholder{
+      color: #ff6e30 ;
+    }
+  }
+
+  &:focus:not(:active){
+    ::placeholder{
+      color: $socialColor;
+    }
+    outline: 1px solid #ff6e30;
+  }
+
+  &:active  {
+    outline: none;
+  }
   }
 }
